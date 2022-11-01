@@ -6,24 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACS</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
-    <header>
-        <nav>
+    <img id="logoVertical" src="images/logo-escalonado.png" alt="logoACS">
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <!-- <img id="burger" src="images/burger-menu.png" alt="burger"> -->
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
             <div class="logo">
-                LOGO
+                <a href="./index.html">
+                    <img src="images/logo-1.png" alt="logoACS">
+                </a>
             </div>
-            <div class="menu">
-                <div>Asesorías</div>
-                <div>Contratos inteligentes/
-                    <br>Blockchain</div>
-                <div>NFTs</div>
-                <div>Metaverso</div>
-                <div>Más</div>
-            </div>
-        </nav>
-    </header>
+            <ul>
+                <li><a href="#">Asesorías</a></li>
+                <li><a href="#">Blockchain</a></li>
+                <li><a href="#">NFTs</a></li>
+                <li><a href="#">Más</a></li>
+            </ul>
+        </nav> 
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
     <!-- main -->
     <main>
         <h2>Nosotros <br> te lo explicamos</h2>
@@ -33,6 +45,7 @@
         </div>
     </main>
     <!-- section -->
+    <div class="all">
     <section>
         <div class="subSection">
             <h4>
@@ -108,7 +121,7 @@
     <form>
         <div class="formTitle">
             <h6 class="formText">
-                Listo para contarnos tu proyecto
+                ¿Listo para contarnos <br> sobre tu proyecto?
             </h6>
             <h6 class="formText1">
                 Escríbenos un mensaje
@@ -117,7 +130,7 @@
         <div class="formContent">
             <div class="formContent1">
                 <input type="text" class="formInput" placeholder="Nombre">
-                <input type="text" class="formInput" placeholder="Email">
+                <input type="text" class="formInput2" placeholder="Email">
             </div>
             <div class="formContent2">
                 <input type="text" class="formInput1" placeholder="Mensaje">
@@ -160,7 +173,7 @@
             </div>
         </div>
         <div class="logoFooter">
-            LOGO
+            <img src="images/logo-1.png" alt="logoACS">
         </div>
         <div class="acs">
             A C S 3.0
@@ -172,5 +185,7 @@
             Copyright Ⓒ 2022 ACS 3.0 - Todos los derechos reservados.
         </div>
     </footer>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
