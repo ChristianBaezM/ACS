@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- header -->
+   v header -->
     <img id="logoVertical" src="images/logo-escalonado.png" alt="logoACS">
     <div id="menu">
         <div id="menu-bar" onclick="menuOnClick()">
@@ -28,10 +28,15 @@
                 </a>
             </div>
             <ul>
-                <li><a href="#">Asesorías</a></li>
-                <li><a href="#">Blockchain</a></li>
-                <li><a href="#">NFTs</a></li>
-                <li><a href="#">Más</a></li>
+                <li><a href="#asesorías">Consultoría</a></li>
+                <li><a href="#cryptos">Cryptos</a></li>
+                <li><a href="#nft">NFTs</a></li>
+                <li><a id="mas" href="#metaverso">Más <span>&dtrif;</span></a>
+                    <ul>
+                        <li><a href="#metaverso">Metaverso</a></li>
+                        <li><a href="#contacto">Contáctanos</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav> 
     </div>
@@ -47,7 +52,7 @@
     <!-- section -->
     <div class="all">
     <section>
-        <div class="subSection">
+        <div class="subSection"> 
             <h4>
                 Ayudamos negocios a educarse <br> y prosperar en la Web3
             </h4>
@@ -55,12 +60,12 @@
                 En equipo podemos impulsar tu visión
             </h5>
             <div class="aside">
-                <div class="subaside">
+                <div id="asesorías" class="subaside">
                     <div class="imageContainer">
-                        <img class="asideImage" src="images/business.jpg" alt="Asesorías">
+                        <img class="asideImage" src="images/asesor.jpg" alt="Asesorías">
                     </div>
                     <div class="content">
-                        <div class="subasideTitle">Asesorías</div>
+                        <div class="subasideTitle">Consultoría Blockchain</div>
                         <div class="subasideContent">
                             Un análisis estratégico completo para cada proyecto y   asegurarnos que el producto final resuelva los    problemas de nuestros clientes y cumpla con sus    expectativas. <br><br>
                             Dale a tu empresa una herramienta para apoyar a crecer  y fortalecer tu negocio. Es un placer poder crear    para uds.
@@ -70,13 +75,13 @@
                         <button class="asideButton1">más detalles</button>
                     </div>
                 </div>
-                <div class="subaside">
+                <div id="cryptos" class="subaside">
                     <div class="imageContainer">
-                        <img class="asideImage" src="images/business.jpg" alt="Asesorías">
+                        <img class="asideImage" src="images/cryptos.jpg" alt="Asesorías">
                     </div>
                     <div class="content">
-                        <div class="subasideTitle">Blockchain</div>
-                        <div class="subasideContent">
+                        <div class="subasideTitle1">Cryptos</div>
+                        <div class="subasideContent1">
                             Las Criptomonedas (Crypto) llegaron para quedarse en el  mundo y jugar un rol muy importante en pagos     transnacionales. <br><br>
                             Dale a tus clientes una nueva forma de pago más segura  para hacer negocios contigo.
                         </div>
@@ -85,13 +90,13 @@
                         <button class="asideButton1">más detalles</button>
                     </div>
                 </div>
-                <div class="subaside">
+                <div id="nft" class="subaside">
                     <div class="imageContainer">
-                        <img class="asideImage" src="images/business.jpg" alt="NFT">
+                        <img class="asideImage" src="images/nftss.jpg" alt="NFT">
                     </div>
                     <div class="content">
-                        <div class="subasideTitle">NFT</div>
-                        <div class="subasideContent">
+                        <div class="subasideTitle1">NFTs</div>
+                        <div class="subasideContent1">
                             Podemos construir Tokens / NFTS a las marcas, empresas  y artistas que buscan nuevas fuentes de ingreso  digitales. <br><br>
                             Dale a tus clientes un nuevo método para hacer  negocios contigo.
                         </div>
@@ -100,13 +105,13 @@
                         <button class="asideButton1">más detalles</button>
                     </div>
                 </div>
-                <div class="subaside">
+                <div id="metaverso" class="subaside">
                     <div class="imageContainer">
-                        <img class="asideImage" src="images/business.jpg" alt="Asesorías">
+                        <img class="asideImage" src="images/metavers.jpg" alt="Asesorías">
                     </div>
                     <div class="content">
-                        <div class="subasideTitle">Metaverso</div>
-                        <div class="subasideContent">
+                        <div class="subasideTitle1">Metaverso</div>
+                        <div class="subasideContent1">
                             Teletransporta tu negocio, empleados, productos a esta  nueva realidad virtual. <br><br>
                             Dale a tus clientes un nuevo lugar para hacer negocios  contigo.
                         </div>
@@ -119,7 +124,7 @@
         </div>
     </section>
     <form>
-        <div class="formTitle">
+        <div id="contacto" class="formTitle">
             <h6 class="formText">
                 ¿Listo para contarnos <br> sobre tu proyecto?
             </h6>
@@ -133,7 +138,8 @@
                 <input type="text" class="formInput2" placeholder="Email">
             </div>
             <div class="formContent2">
-                <input type="text" class="formInput1" placeholder="Mensaje">
+                <textarea name="Mensaje" placeholder="Mensaje" id="formInput1" cols="30" rows="10"></textarea>
+                <!-- <input type="text" class="formInput1" placeholder="Mensaje"> -->
             </div>
         </div>
         <div class="formButton">
